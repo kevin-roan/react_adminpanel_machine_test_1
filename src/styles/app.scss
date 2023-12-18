@@ -1,0 +1,45 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --primary-color:#B1E7FF;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+.yellow{
+  color:yellow;
+}
+.red{
+  color:red;
+}
+.violet{
+  color:violet;
+}
+
+@import "_mixins";
+
+.adminContainer {
+  @include grid(1fr 4fr,2rem);
+  height:100vh;
+  background-color:#E3F1FE;
+ > aside {
+    width: 100%;
+    background-color: white;
+    padding: 0 1rem 0rem 0rem;
+    z-index: 10;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
