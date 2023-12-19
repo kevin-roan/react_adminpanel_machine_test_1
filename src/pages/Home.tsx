@@ -47,21 +47,21 @@ export default Home;
 const pricecardProps = [
   {
     heading: "Basic",
-    theme: "orange",
+    theme: "#FFE7A9",
     crossedPrice: "$89.99/mo",
     actualPrice: "$9.99/mo",
     features: ["Up to 25 Users", "Up to 25gb Storage", "Email Support"],
   },
   {
     heading: "Standard",
-    theme: "purple",
+    theme: "#FF9494",
     crossedPrice: "$189.99/mo",
     actualPrice: "$99.99/mo",
     features: ["Up to 50 Users", "Up to 60gb Storage", "Email+Chat Support"],
   },
   {
     heading: "Premium",
-    theme: "pink",
+    theme: "#E7A2FF",
     crossedPrice: "$389.99/mo",
     actualPrice: "$199.99/mo",
     features: [
@@ -75,7 +75,7 @@ const pricecardProps = [
 const plancardProps = [
   {
     bubble: "Free Forever",
-    theme: "limegreen",
+    theme: "#C6FF8E",
     heading: "Free Starter",
     desc: "The quickest and easiest way to try Protocols with basic functionalities",
     features: [
@@ -87,7 +87,7 @@ const plancardProps = [
   },
   {
     bubble: "Let's Connect",
-    theme: "purple",
+    theme: "#8AB9FF",
     heading: "Enterprice Plan",
     desc: "Effortlessly customize and fine-tune services as your need shift, ensuring the perfect tools for success",
     features: ["Up to 75 Users", "Customization of all other features"],

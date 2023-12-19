@@ -43,7 +43,10 @@ function Card({
         }`}
       >
         <div className="top">
-          <div className="bubble" style={{ backgroundColor: theme }}>
+          <div
+            className="bubble"
+            style={{ backgroundColor: theme, color: "black" }}
+          >
             {bubble}
           </div>
           <h1>{heading}</h1>
