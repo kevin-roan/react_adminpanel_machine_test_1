@@ -1,0 +1,5 @@
+@media screen and (width<= 1100px) {
+  .admin-container {
+    grid-template-columns: 1fr !important;
+  }
+}

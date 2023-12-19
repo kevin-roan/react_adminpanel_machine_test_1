@@ -1,0 +1,55 @@
+@import "../_mixins";
+
+.pricecard{
+  width:300px;
+  max-height: 400px;
+  border-radius: 10px;
+  padding:1rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.050);
+}
+.plancard{
+  width:600px;
+  height: 300px;
+  padding:1rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.050);
+  @include flex(row,center,center,2rem);
+  background-color: pink;
+  .top{
+    border-bottom: none;
+  }
+}
+.bottom {
+  padding:1rem 0rem;
+  @include flex(column,center,uset,0.4rem)
+}
+
+
+.top{
+  border-bottom: 1px solid #000;
+  padding:1rem 0rem;
+}
+
+.primary-button{
+    padding:0.5rem 1.3rem; 
+    cursor:pointer;
+    color:black;
+    border:none;
+    border-radius: 5px;
+    background-color: yellowgreen;
+    &:hover{
+      transition: ease-in-out 0.3s;
+      color:white;
+    }
+    svg{
+      margin-left:10px;
+      vertical-align:middle ;
+    }
+}
+.bubble{
+   border-radius: 20px; 
+   padding: 1px;
+   width:50%;
+   text-align: center;
+   color: white;
+}

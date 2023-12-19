@@ -1,5 +1,9 @@
+@import "mediaquery";
+@import "_mixins";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700&display=swap");
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Nunito", sans-serif;
   line-height: 1.5;
   font-weight: 400;
   --primary-color:#B1E7FF;
@@ -26,9 +30,7 @@ a{
   color:violet;
 }
 
-@import "_mixins";
-
-.adminContainer {
+.admin-container{
   @include grid(1fr 4fr,2rem);
   height:100vh;
   background-color:#E3F1FE;
