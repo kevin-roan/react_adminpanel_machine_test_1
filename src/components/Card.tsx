@@ -2,7 +2,6 @@ import "../styles/components/card.scss";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { LuServerCog } from "react-icons/lu";
 import { motion } from "framer-motion";
-import { CiUser, CiCloud, CiMail } from "react-icons/ci";
 
 interface CardProps {
   variant: string;
