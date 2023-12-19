@@ -20,6 +20,7 @@ function Card({
   actualPrice,
   features,
   bubble,
+  desc,
 }: CardProps) {
   return (
     <div
@@ -32,13 +33,14 @@ function Card({
           {bubble}
         </div>
         <h1>{heading}</h1>
+        {variant !== "pricecard" && <p>{desc}</p>}
         <p>{crossedPrice}</p>
         <h1>{actualPrice}</h1>
         <Button title="Get Started" theme={theme} />
       </div>
       <div className="bottom">
         <p>What you'll get:</p>
-        {features && features.map((item, index) => <h5 key={index}>{item}</h5>)}
+        {features && features.map((item, index) => <p key={index}>{item}</p>)}
         <u>Explore Features</u>
       </div>
     </div>
