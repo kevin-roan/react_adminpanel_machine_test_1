@@ -1,5 +1,8 @@
 import "../styles/components/card.scss";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { LuServerCog } from "react-icons/lu";
+import { motion } from "framer-motion";
+import { CiUser, CiCloud, CiMail } from "react-icons/ci";
 
 interface CardProps {
   variant: string;
@@ -23,27 +26,45 @@ function Card({
   desc,
 }: CardProps) {
   return (
-    <div
-      className={`card-container ${
-        variant === "pricecard" ? "pricecard" : "plancard"
-      }`}
+    <motion.div
+      initial={{ y: "100%", opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      exit={{ y: "100%", opacity: 0 }}
+      transition={{
+        type: "spring",
+        stiffness: 260,
+        damping: 20,
+      }}
     >
-      <div className="top">
-        <div className="bubble" style={{ backgroundColor: theme }}>
-          {bubble}
+      {" "}
+      <div
+        className={`card-container ${
+          variant === "pricecard" ? "pricecard" : "plancard"
+        }`}
+      >
+        <div className="top">
+          <div className="bubble" style={{ backgroundColor: theme }}>
+            {bubble}
+          </div>
+          <h1>{heading}</h1>
+          {variant !== "pricecard" && <p>{desc}</p>}
+          <p>{crossedPrice}</p>
+          <h1>{actualPrice}</h1>
+          <Button title="Get Started" theme={theme} />
         </div>
-        <h1>{heading}</h1>
-        {variant !== "pricecard" && <p>{desc}</p>}
-        <p>{crossedPrice}</p>
-        <h1>{actualPrice}</h1>
-        <Button title="Get Started" theme={theme} />
+        <div className="bottom">
+          <p>What you'll get:</p>
+          {features &&
+            features.map((item, index) => (
+              <p key={index}>
+                <LuServerCog />
+                {item}
+              </p>
+            ))}
+          <u>Explore Features</u>
+        </div>
       </div>
-      <div className="bottom">
-        <p>What you'll get:</p>
-        {features && features.map((item, index) => <p key={index}>{item}</p>)}
-        <u>Explore Features</u>
-      </div>
-    </div>
+    </motion.div>
   );
 }
 

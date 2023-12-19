@@ -48,8 +48,8 @@ const AdminSidebar = () => {
         }
       >
         <UserDetails
-          username="Kevin Roan"
-          email="kevinroan@email.me"
+          username="Ram Mohan"
+          email="rammohan@gmail.com"
           imgUrl="https://images.pexels.com/photos/4307710/pexels-photo-4307710.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         />
         <DashBoardItems />

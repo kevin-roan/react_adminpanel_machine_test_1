@@ -82,7 +82,7 @@ const plancardProps = [
       "Upto 8 Users",
       "Up to 3gb Storage",
       "Email Support",
-      "Basics of Documents,Task Flow,Voting,Accounting,Banking,Notes,Investor,Director and Team Management included",
+      "Basics of Documents Task Flow Voting Accounting Banking Notes Investor Director and Team Management included",
     ],
   },
   {

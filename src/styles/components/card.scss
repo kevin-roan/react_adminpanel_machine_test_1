@@ -8,20 +8,25 @@
   }
   border-radius: 10px;
   padding:1rem;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.050);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.200);
   .bubble{
     display: none;
+  }
+  &:hover{
+    transition: ease-in-out 0.5s;
+    transform: scale(1.05);
   }
 }
 .plancard{
   width:100%;
+  min-height: 12vmax;
   padding: 0 2rem;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap:1rem;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.050);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.200);
   @media screen and (max-width:850px){
     padding:2rem 2rem;
     width: 80vmin;
