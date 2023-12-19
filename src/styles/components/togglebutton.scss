@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
 }
-.toggle_option{
+.toggle_option active{
   width:50%;
   margin:1rem 0.3rem;
   background-color: #B1E7FF;
@@ -17,4 +17,35 @@
   justify-content: center;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.050);
   padding:0.7rem;
+}
+.toggle_option:hover{
+
+}
+.toggle_option {
+  width: 50%;
+  margin: 1rem 0.3rem;
+  background-color: white;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.050);
+  padding: 0.7rem;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: transparent; 
+  }
+  }
+
+.toggle_option:hover {
+  background-color: #86c7ff;
+}
+.toggle_option.active:hover{
+
+  background-color: #86c7ff;
+}
+
+.toggle_option.active {
+  background-color: #B1E7FF; 
+  color: #000;  
 }

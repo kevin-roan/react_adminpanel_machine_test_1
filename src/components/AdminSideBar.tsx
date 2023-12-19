@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { IconType } from "react-icons";
-import { HiMenuAlt4 } from "react-icons/hi";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { MdContactMail } from "react-icons/md";
 import { RiDashboardFill } from "react-icons/ri";
 import { PiPottedPlantFill } from "react-icons/pi";
@@ -29,7 +29,7 @@ const AdminSidebar = () => {
     <>
       {phoneActive && (
         <button id="hamburger" onClick={() => setShowModal(true)}>
-          <HiMenuAlt4 />
+          <GiHamburgerMenu />
         </button>
       )}
 

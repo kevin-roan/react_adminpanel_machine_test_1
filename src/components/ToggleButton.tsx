@@ -3,7 +3,7 @@ import "../styles/components/togglebutton.scss";
 function ToggleButton() {
   return (
     <div className="toggle_container">
-      <div className="toggle_option">
+      <div className="toggle_option active">
         <h6>Montly</h6>
       </div>
       <div className="toggle_option">

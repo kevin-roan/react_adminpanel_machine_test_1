@@ -21,7 +21,6 @@ a{
 }
 
 .admin-container{
-  min-height: 100vh;
   display: flex;
   background-color:white;
   @media screen and (max-width:850px){
@@ -72,3 +71,17 @@ a{
 .app{
   background-color:#E3F1FE;
 }
+
+#hamburger {
+  align-self: center;
+  padding: 1rem;
+  border: none;
+  border-radius: 50%; 
+  position: fixed;
+  top: 4%;
+  left: 5%;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
