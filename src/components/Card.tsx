@@ -50,7 +50,9 @@ function Card({
           </div>
           <h1>{heading}</h1>
           {variant !== "pricecard" && <p>{desc}</p>}
-          <p>{crossedPrice}</p>
+          <del>
+            <span className="crossed_price">{crossedPrice}</span>
+          </del>
           <h1>{actualPrice}</h1>
           <Button title="Get Started" theme={theme} />
         </div>
